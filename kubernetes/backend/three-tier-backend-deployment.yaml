@@ -41,7 +41,7 @@ spec:
         - name: DB_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: {{.Values.namespace}}-db-credentials
+              name: db_credentials
               key: password
         imagePullPolicy: "Always"
         resources:
