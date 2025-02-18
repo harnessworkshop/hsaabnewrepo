@@ -41,7 +41,7 @@ spec:
         - name: DB_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: db_credentials
+              name: db-credentials
               key: password
         imagePullPolicy: "Always"
         resources:
